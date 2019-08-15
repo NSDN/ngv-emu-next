@@ -1,0 +1,32 @@
+cls
+var img3 = 0x000000
+mld img3, "img3.bin"
+var siz3 = r0
+var img4 = 0x008000
+mld img4, "img4.bin"
+var siz4 = r0
+
+mov r0, 64
+mov r1, 64
+scl 2
+show "Image Drawing Test"
+
+mov r0, 128
+mov r1, 96
+mov r2, 480
+mov r3, 270
+img img4
+
+mov r0, 640
+mov r1, 96
+mov r2, 64
+mov r3, 64
+img img3, 0x000000
+
+mov r0, 64
+mov r1, 400
+scl 1
+show "Press F1 to exit"
+wait 1000
+key "F1"
+cls

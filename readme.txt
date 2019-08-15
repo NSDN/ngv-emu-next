@@ -1,8 +1,8 @@
-﻿ngv-emu
-    NyaGame Vita单板游戏机模拟器
-    https://github.com/NSDN/NGV/tree/master/cortex/emulator
+﻿ngv-emu-next
+    NyaGame Vita单板游戏机模拟器（增强版）
+    https://github.com/NSDN/ngv-emu-next
 
-基于gcc8.1编译，图形部分依赖SDL2，应该只有64位系统才能运行
+基于gcc8.1-posix编译，图形部分依赖SDL2，应该只有64位系统才能运行
 
 1. 双击ngv-emu.exe后可见两个窗口，一个为命令行窗口，一个为SDL图形窗口
    前者模拟的是串口输入输出的部分，后者则是显示屏和物理按键
@@ -32,5 +32,5 @@ Assets目录下：
 以上脚本均可使用文本编辑器打开并编辑，部分关于NSASM的信息可参考以下链接：
     https://github.com/NSDN/NSASM
 关于NSHEL的信息暂无可阅读的文档，请自行查阅源码：
-    https://github.com/NSDN/NGV/tree/master/cortex/emulator/Drivers/NGV/nshel.c
+    https://github.com/NSDN/ngv-emu-next/tree/master/Drivers/NGV/nshel.c
     
